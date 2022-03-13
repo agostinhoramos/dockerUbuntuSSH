@@ -21,13 +21,13 @@ docker run -d --name ubuntuSSH -p 2022:22 ubuntu_ssh
 sudo netstat -ntlp | grep LISTEN
 ```
 
-5 - start SSH connection
+5 - Start SSH connection
 ```
 ssh -p 2022 user@127.0.0.1
 ```
 
 
-4 - start SFTP connection
+4 - Start SFTP connection
 ```
 sftp -oPort=2022 user@127.0.0.1
 ```
