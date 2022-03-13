@@ -11,23 +11,23 @@ I'm using the Ubuntu distribution, but any other distribution will also work. :)
 docker build --tag=ubuntu_ssh .
 ```
 
-2 - 
+2 - Run docker image
 ```
 docker run -d --name ubuntuSSH -p 2022:22 ubuntu_ssh
 ```
 
-3 -
+3 - Check if port 2022 exist
 ```
 sudo netstat -ntlp | grep LISTEN
 ```
 
-5 - SSH connection
+5 - start SSH connection
 ```
 ssh -p 2022 user@127.0.0.1
 ```
 
 
-4 - SFTP connection
+4 - start SFTP connection
 ```
 sftp -oPort=2022 user@127.0.0.1
 ```
